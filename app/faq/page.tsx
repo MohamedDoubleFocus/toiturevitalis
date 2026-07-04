@@ -241,7 +241,7 @@ export default function FaqPage() {
                       href={`tel:${site.phoneHref}`}
                       className="btn-outline-navy text-[15px]"
                     >
-                      <Phone className="h-[18px] w-[18px] text-brand" />
+                      <Phone className="h-[18px] w-[18px] text-brand-strong" />
                       {site.phoneDisplay}
                     </a>
                   </div>

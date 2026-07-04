@@ -226,10 +226,10 @@ export default async function ArticlePage({
                     />
                   </div>
                   <div className="flex flex-col justify-center">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-brand">
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-brand-strong">
                       {r.category}
                     </span>
-                    <h3 className="mt-1 text-[1rem] font-bold leading-snug text-navy transition-colors duration-200 group-hover:text-brand">
+                    <h3 className="mt-1 text-[1rem] font-bold leading-snug text-navy transition-colors duration-200 group-hover:text-brand-strong">
                       {r.title}
                     </h3>
                   </div>

@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --navy: #1b3a5c;
-  --navy-deep: #0f1b2a;
-  --brand: #4a90e0;
-  --brand-hover: #3a78c2;
+  --navy: #111418; /* near-black (pivot Miami : noir + cyan) */
+  --navy-deep: #000000; /* noir pur */
+  --brand: #54c3ea; /* Miami blue — accent vif (sur fond noir, CTA, glows) */
+  --brand-hover: #2aa8d6; /* cyan plus foncé (survol) */
+  --brand-strong: #0e7ba6; /* cyan accessible pour TEXTE sur fond clair */
   --grey-text: #5a6b7b;
   --grey-light: #f4f6f8;
   --grey-border: #e2e8f0;
@@ -21,14 +22,14 @@
   body {
     background-color: #ffffff;
     color: var(--grey-text);
-    font-family: var(--font-inter), system-ui, sans-serif;
+    font-family: var(--font-figtree), system-ui, sans-serif;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
 
   ::selection {
-    background-color: rgba(74, 144, 224, 0.22);
+    background-color: rgba(84, 195, 234, 0.28);
     color: var(--navy);
   }
 
@@ -105,38 +106,50 @@ html:not(.js) .reveal {
     }
   }
 
-  /* Titre signature : phrase blanche/navy + mot-clé bleu + point final */
+  /* Titre signature : phrase blanche/noire + mot-clé Miami blue + point final */
   .headline {
-    font-family: var(--font-archivo-black), "Arial Black", sans-serif;
-    letter-spacing: -0.02em;
-    line-height: 1.02;
+    font-family: var(--font-figtree), system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
   }
 
+  /* Figtree n'a pas de graisse « black » native → on force le gras partout
+     où l'on utilisait Archivo Black (font-display). Surchargeable par font-bold/semibold. */
+  .font-display {
+    font-weight: 800;
+  }
+
+  /* Mot-clé : cyan foncé LISIBLE par défaut (cas courant = titre sur fond clair). */
   .kw {
+    color: var(--brand-strong);
+  }
+  /* Sur FOND SOMBRE (héros, sections noires) : cyan Miami vif qui ressort. */
+  .kw-bright {
     color: var(--brand);
   }
 
-  /* Bouton principal (CTA bleu) */
+  /* Bouton principal (CTA Miami blue, texte NOIR pour le contraste + le look) */
   .btn-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.55rem;
     background-color: var(--brand);
-    color: #ffffff;
-    font-weight: 600;
+    color: #08131a;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 1;
     padding: 0.95rem 1.6rem;
     border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(74, 144, 224, 0.28);
+    box-shadow: 0 8px 20px rgba(84, 195, 234, 0.32);
     transition: background-color 0.2s ease, transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
       box-shadow 0.2s ease;
   }
   .btn-primary:hover {
     background-color: var(--brand-hover);
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(74, 144, 224, 0.36);
+    box-shadow: 0 12px 26px rgba(84, 195, 234, 0.44);
   }
   .btn-primary:active {
     transform: translateY(0);
@@ -199,7 +212,7 @@ html:not(.js) .reveal {
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--brand);
+    color: var(--brand-strong); /* lisible sur fond clair ; surchargé en blanc sur les héros */
   }
 
   /* Champs de formulaire */
@@ -223,7 +236,7 @@ html:not(.js) .reveal {
   .form-input:focus {
     outline: none;
     border-color: var(--brand);
-    box-shadow: 0 0 0 3px rgba(74, 144, 224, 0.16);
+    box-shadow: 0 0 0 3px rgba(84, 195, 234, 0.22);
   }
 }
 
@@ -234,7 +247,8 @@ html:not(.js) .reveal {
   line-height: 1.75;
 }
 .legal-prose h2 {
-  font-family: var(--font-archivo-black), "Arial Black", sans-serif;
+  font-family: var(--font-figtree), system-ui, sans-serif;
+  font-weight: 800;
   color: var(--navy);
   font-size: 1.35rem;
   letter-spacing: -0.01em;
@@ -256,11 +270,11 @@ html:not(.js) .reveal {
   margin-bottom: 0.4rem;
 }
 .legal-prose a {
-  color: var(--brand);
+  color: var(--brand-strong); /* liens sur fond blanc — cyan foncé lisible */
   font-weight: 600;
 }
 .legal-prose a:hover {
-  color: var(--brand-hover);
+  color: var(--navy);
 }
 .legal-prose strong {
   color: var(--navy);
@@ -269,7 +283,7 @@ html:not(.js) .reveal {
 .legal-note {
   margin-top: 2.5rem;
   border-left: 3px solid var(--brand);
-  background: rgba(74, 144, 224, 0.05);
+  background: rgba(84, 195, 234, 0.08);
   border-radius: 0 8px 8px 0;
   padding: 1rem 1.25rem;
   font-size: 0.9rem;
@@ -290,7 +304,7 @@ video::-webkit-media-controls-play-button {
   pointer-events: none;
 }
 
-/* Traitement chromatique des photos : unité navy (mix-blend léger via overlay) */
+/* Traitement chromatique des photos : unité noire (mix-blend léger via overlay) */
 .photo-treat {
   position: relative;
 }
@@ -300,8 +314,8 @@ video::-webkit-media-controls-play-button {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(15, 27, 42, 0.05) 0%,
-    rgba(27, 58, 92, 0.22) 100%
+    rgba(0, 0, 0, 0.06) 0%,
+    rgba(10, 14, 22, 0.28) 100%
   );
   pointer-events: none;
 }

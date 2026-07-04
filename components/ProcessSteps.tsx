@@ -51,7 +51,7 @@ export default function ProcessSteps() {
               <Reveal key={s.n} delay={i * 90}>
                 <div className="flex gap-5 py-5">
                   <div className="flex-shrink-0">
-                    <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-white font-display text-[1.4rem] tracking-tightest text-brand shadow-card">
+                    <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-white font-display text-[1.4rem] tracking-tightest text-brand-strong shadow-card">
                       {s.n}
                     </span>
                   </div>
@@ -71,7 +71,7 @@ export default function ProcessSteps() {
             <Reveal delay={120}>
               <Link
                 href="/comment-ca-fonctionne"
-                className="group mt-6 inline-flex items-center gap-2 text-[1rem] font-semibold text-brand transition-colors duration-200 hover:text-brand-hover"
+                className="group mt-6 inline-flex items-center gap-2 text-[1rem] font-semibold text-brand-strong transition-colors duration-200 hover:text-navy"
               >
                 En savoir plus sur le procédé
                 <ArrowRight className="h-[18px] w-[18px] transition-transform duration-200 group-hover:translate-x-1" />

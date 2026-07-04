@@ -31,7 +31,7 @@ export default function Benefits() {
           <p className="eyebrow mb-4 justify-center">Les bénéfices</p>
           <h2 className="font-display text-[2rem] leading-[1.08] tracking-tightest text-white sm:text-[2.6rem]">
             Une protection complète contre le{" "}
-            <span className="kw">climat québécois.</span>
+            <span className="kw-bright">climat québécois.</span>
           </h2>
         </Reveal>
 

@@ -58,7 +58,7 @@ export default function FaqSection() {
             </p>
             <Link
               href="/faq"
-              className="group mt-7 inline-flex items-center gap-2 text-[1rem] font-semibold text-brand transition-colors duration-200 hover:text-brand-hover"
+              className="group mt-7 inline-flex items-center gap-2 text-[1rem] font-semibold text-brand-strong transition-colors duration-200 hover:text-navy"
             >
               Voir toutes les questions
               <ArrowRight className="h-[18px] w-[18px] transition-transform duration-200 group-hover:translate-x-1" />

@@ -41,7 +41,7 @@ export default function SectorsSection() {
                   <span className="font-display text-[1.05rem] tracking-tightest text-white">
                     {s.name}
                   </span>
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-[background-color,transform] duration-300 group-hover:bg-brand group-hover:translate-x-0.5">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-[background-color,transform] duration-300 group-hover:bg-brand group-hover:text-navy-deep group-hover:translate-x-0.5">
                     <ArrowRight className="h-4 w-4" />
                   </span>
                 </div>

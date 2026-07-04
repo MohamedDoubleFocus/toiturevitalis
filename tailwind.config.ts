@@ -9,31 +9,35 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // "navy" = tokens sombres de la marque, désormais NOIR (pivot Miami : noir + cyan)
         navy: {
-          DEFAULT: "#1B3A5C",
-          deep: "#0F1B2A",
+          DEFAULT: "#111418", // near-black (titres, surfaces sombres)
+          deep: "#000000", // noir pur (overlays profonds, footer, badges)
         },
         brand: {
-          DEFAULT: "#4A90E0", // accent bleu marque
-          hover: "#3A78C2",
+          DEFAULT: "#54C3EA", // Miami blue — accent vif (fonds, sur fond noir, glows, CTA)
+          hover: "#2AA8D6", // cyan plus foncé (survol de fond)
+          strong: "#0E7BA6", // cyan accessible pour TEXTE sur fond clair (WCAG AA)
         },
         greytext: "#5A6B7B",
         greylight: "#F4F6F8",
         greyborder: "#E2E8F0",
       },
       fontFamily: {
-        display: ["var(--font-archivo-black)", "Arial Black", "sans-serif"],
-        sans: ["var(--font-inter)", "system-ui", "-apple-system", "sans-serif"],
+        // Figtree partout (titres + corps). La graisse « display » est forcée en CSS.
+        display: ["var(--font-figtree)", "system-ui", "sans-serif"],
+        sans: ["var(--font-figtree)", "system-ui", "-apple-system", "sans-serif"],
       },
       boxShadow: {
-        // Ombres teintées navy/bleu, faible opacité, multi-couches (jamais shadow-md plat)
-        card: "0 2px 4px -1px rgba(27,58,92,0.05), 0 12px 28px -8px rgba(27,58,92,0.14)",
+        // Ombres teintées noir, faible opacité, multi-couches (jamais shadow-md plat)
+        card: "0 2px 4px -1px rgba(10,14,22,0.06), 0 12px 28px -8px rgba(10,14,22,0.16)",
         "card-hover":
-          "0 4px 8px -2px rgba(27,58,92,0.08), 0 20px 40px -10px rgba(27,58,92,0.20)",
+          "0 4px 8px -2px rgba(10,14,22,0.10), 0 20px 40px -10px rgba(10,14,22,0.22)",
         float:
-          "0 1px 2px rgba(15,27,42,0.06), 0 10px 30px -6px rgba(15,27,42,0.14)",
-        cta: "0 8px 20px rgba(74,144,224,0.28)",
-        "cta-hover": "0 12px 26px rgba(74,144,224,0.36)",
+          "0 1px 2px rgba(0,0,0,0.06), 0 10px 30px -6px rgba(0,0,0,0.16)",
+        // CTA : lueur cyan Miami
+        cta: "0 8px 20px rgba(84,195,234,0.30)",
+        "cta-hover": "0 12px 26px rgba(84,195,234,0.42)",
         inset: "inset 0 1px 0 rgba(255,255,255,0.6)",
       },
       letterSpacing: {

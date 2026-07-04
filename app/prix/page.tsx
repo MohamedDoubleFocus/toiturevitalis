@@ -156,7 +156,7 @@ export default function PrixPage() {
 
             <Reveal delay={100}>
               <div className="relative flex h-full flex-col justify-center overflow-hidden rounded-2xl bg-navy p-8 text-center shadow-card">
-                <span className="absolute left-1/2 top-4 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white shadow-cta">
+                <span className="absolute left-1/2 top-4 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-navy-deep shadow-cta">
                   Recommandé
                 </span>
                 <span className="mt-3 text-[12px] font-semibold uppercase tracking-[0.08em] text-white/70">
@@ -174,7 +174,7 @@ export default function PrixPage() {
 
           <Reveal delay={160}>
             <div className="mx-auto mt-8 flex w-fit items-center gap-3 rounded-full border border-brand/25 bg-brand/[0.07] py-2.5 pl-3 pr-6">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand/15 text-brand">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand/15 text-brand-strong">
                 <PiggyBank className="h-5 w-5" strokeWidth={2} aria-hidden />
               </span>
               <span className="text-[1.05rem] font-bold text-navy">
@@ -203,7 +203,7 @@ export default function PrixPage() {
             {facteurs.map((f, i) => (
               <Reveal key={f.title} delay={i * 90}>
                 <div className="h-full rounded-2xl border border-greyborder bg-white p-7 shadow-card">
-                  <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand">
+                  <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand-strong">
                     <f.Icon className="h-6 w-6" strokeWidth={1.9} />
                   </span>
                   <h3 className="text-[1.2rem] font-bold leading-snug text-navy">
@@ -233,7 +233,7 @@ export default function PrixPage() {
             {engagements.map((e, i) => (
               <Reveal key={e.title} delay={i * 90}>
                 <div className="flex h-full flex-col rounded-2xl border border-greyborder bg-greylight p-7 shadow-card">
-                  <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand">
+                  <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand-strong">
                     <e.Icon className="h-6 w-6" strokeWidth={1.9} />
                   </span>
                   <h3 className="text-[1.2rem] font-bold text-navy">{e.title}</h3>

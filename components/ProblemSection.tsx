@@ -35,7 +35,7 @@ export default function ProblemSection() {
                 </p>
               </div>
               <div className="rounded-xl border border-brand/25 bg-brand/5 px-5 py-4">
-                <div className="font-display text-[1.7rem] leading-none tracking-tightest text-brand">
+                <div className="font-display text-[1.7rem] leading-none tracking-tightest text-brand-strong">
                   ~30&nbsp;%
                 </div>
                 <p className="mt-1.5 text-[13px] font-medium text-greytext">

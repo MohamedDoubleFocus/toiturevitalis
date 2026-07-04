@@ -163,7 +163,7 @@ export default function ServicesPage() {
                 {residentiel.map((p) => (
                   <li key={p} className="flex items-start gap-3">
                     <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-brand/12">
-                      <Check className="h-4 w-4 text-brand" strokeWidth={2.6} aria-hidden />
+                      <Check className="h-4 w-4 text-brand-strong" strokeWidth={2.6} aria-hidden />
                     </span>
                     <span className="text-[15px] font-medium leading-snug text-navy">
                       {p}
@@ -198,7 +198,7 @@ export default function ServicesPage() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="eyebrow mb-4 justify-center">Compris partout</p>
             <h2 className="font-display text-[1.9rem] leading-[1.1] tracking-tightest text-white sm:text-[2.3rem]">
-              Ce qui est toujours <span className="kw">inclus.</span>
+              Ce qui est toujours <span className="kw-bright">inclus.</span>
             </h2>
           </Reveal>
           <ul className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -263,7 +263,7 @@ export default function ServicesPage() {
                     <h3 className="font-display text-[1.3rem] tracking-tightest text-navy">
                       {p.title}
                     </h3>
-                    <p className="mt-1.5 text-[12.5px] font-semibold uppercase tracking-[0.06em] text-brand">
+                    <p className="mt-1.5 text-[12.5px] font-semibold uppercase tracking-[0.06em] text-brand-strong">
                       {p.subtitle}
                     </p>
                     <p className="mt-3 text-[15px] leading-[1.65] text-greytext">

@@ -25,13 +25,13 @@ export default function SiteFooter() {
           {/* Marque */}
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="relative block h-11 w-12 shrink-0 overflow-hidden">
+              <span className="relative block h-11 w-12 shrink-0">
                 <Image
                   src="/brand/logo-blanc.png"
                   alt="Logo Toitures Vitalis"
-                  width={59}
-                  height={59}
-                  className="absolute left-1/2 top-0 max-w-none -translate-x-1/2"
+                  fill
+                  sizes="48px"
+                  className="object-contain"
                 />
               </span>
               <span className="font-display text-[1.05rem] tracking-tightest text-white">

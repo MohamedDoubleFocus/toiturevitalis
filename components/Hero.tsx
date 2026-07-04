@@ -40,17 +40,15 @@ export default function Hero() {
             style={{ animationDelay: "0.12s" }}
           >
             Prolongez la vie de votre toiture, sans la{" "}
-            <span className="kw">remplacer.</span>
+            <span className="kw-bright">remplacer.</span>
           </h1>
 
           <p
             className="mt-6 max-w-2xl animate-fade-up text-[1.05rem] leading-relaxed text-white/90 sm:text-[1.15rem]"
             style={{ animationDelay: "0.2s" }}
           >
-            Toitures Vitalis applique un traitement nanotechnologique qui protège vos
-            bardeaux contre les UV, l&apos;eau, le gel-dégel et la grêle — sans
-            arrachage, en une seule journée. Certifié GoNano, à une fraction du coût
-            d&apos;un remplacement complet.
+            Traitement nano certifié GoNano — appliqué en une journée, sans
+            arrachage, à une fraction du coût d&apos;un remplacement.
           </p>
 
           <div

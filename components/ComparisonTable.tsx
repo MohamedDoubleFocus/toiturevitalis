@@ -24,7 +24,7 @@ const rows: Row[] = [
 function YesMark() {
   return (
     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand shadow-cta">
-      <Check className="h-5 w-5 text-white" strokeWidth={3} aria-hidden />
+      <Check className="h-5 w-5 text-navy-deep" strokeWidth={3} aria-hidden />
       <span className="sr-only">Oui</span>
     </span>
   );
@@ -55,7 +55,7 @@ export default function ComparisonTable() {
               avec notre traitement nano.
             </p>
             <div className="mt-7 inline-flex items-center gap-2.5 rounded-full border border-brand/25 bg-brand/[0.07] py-2.5 pl-3 pr-5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand/15 text-brand">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand/15 text-brand-strong">
                 <PiggyBank className="h-[18px] w-[18px]" strokeWidth={2} aria-hidden />
               </span>
               <span className="text-[15px] font-semibold text-navy">
@@ -71,7 +71,7 @@ export default function ComparisonTable() {
                 {/* En-têtes */}
                 <div className="bg-white" />
                 <div className="relative bg-navy px-2 pb-4 pt-8 text-center sm:px-4">
-                  <span className="absolute left-1/2 top-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand px-2.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-[0.08em] text-white shadow-cta">
+                  <span className="absolute left-1/2 top-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand px-2.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-[0.08em] text-navy-deep shadow-cta">
                     Recommandé
                   </span>
                   <span className="font-display text-[0.92rem] leading-tight tracking-tightest text-white sm:text-[1rem]">

@@ -15,13 +15,14 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
+      {/* Crédibilité « Dans l'œil du dragon » placée en premier pour la preuve sociale */}
+      <Credibility />
       <StatsBar />
       <ProblemSection />
       <ProcessSteps />
       <ComparisonTable />
       <Benefits />
       <ResultsSection />
-      <Credibility />
       <Testimonials />
       <SectorsSection />
       <FaqSection />

@@ -83,7 +83,7 @@ export default function PageHero({
             {eyebrow}
           </p>
           <h1 className="headline text-[2.4rem] text-white sm:text-[3.1rem] lg:text-[3.75rem]">
-            {titleLead} <span className="kw">{titleKeyword}</span>
+            {titleLead} <span className="kw-bright">{titleKeyword}</span>
           </h1>
           <p className="mt-6 max-w-2xl text-[1.05rem] leading-relaxed text-white/90 sm:text-[1.12rem]">
             {subtitle}

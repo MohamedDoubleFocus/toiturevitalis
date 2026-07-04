@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo_Black, Inter } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
 import AnnouncementBar from "@/components/AnnouncementBar";
@@ -8,17 +8,10 @@ import SiteFooter from "@/components/SiteFooter";
 import MobileStickyCta from "@/components/MobileStickyCta";
 import JsonLd from "@/components/JsonLd";
 
-const archivoBlack = Archivo_Black({
+// Police unique de marque : Figtree (variable, graisses 300–900) — titres ET corps.
+const figtree = Figtree({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-archivo-black",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-figtree",
   display: "swap",
 });
 
@@ -34,10 +27,7 @@ export const metadata: Metadata = {
   authors: [{ name: site.name }],
   creator: site.name,
   publisher: site.name,
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-  },
+  // Favicons gérés par les fichiers app/icon.png, app/apple-icon.png et app/favicon.ico
   formatDetection: { telephone: true, email: true, address: true },
   alternates: { canonical: "/" },
   openGraph: {
@@ -79,7 +69,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr-CA"
-      className={`${archivoBlack.variable} ${inter.variable}`}
+      className={figtree.variable}
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>

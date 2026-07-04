@@ -154,7 +154,7 @@ export default function AProposPage() {
               </p>
               <Link
                 href="#soumission"
-                className="group mt-8 inline-flex items-center gap-2 text-[1rem] font-semibold text-brand transition-colors duration-200 hover:text-brand-hover"
+                className="group mt-8 inline-flex items-center gap-2 text-[1rem] font-semibold text-brand-strong transition-colors duration-200 hover:text-navy"
               >
                 Rencontrez-nous — inspection gratuite
                 <ArrowRight className="h-[18px] w-[18px] transition-transform duration-200 group-hover:translate-x-1" />
@@ -174,7 +174,7 @@ export default function AProposPage() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="eyebrow mb-4 justify-center">Nos valeurs</p>
             <h2 className="font-display text-[2rem] leading-[1.08] tracking-tightest text-white sm:text-[2.5rem]">
-              Ce qui nous <span className="kw">définit.</span>
+              Ce qui nous <span className="kw-bright">définit.</span>
             </h2>
           </Reveal>
 

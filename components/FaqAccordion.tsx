@@ -73,11 +73,11 @@ export default function FaqAccordion({
                 aria-expanded={open}
                 aria-controls={panelId}
                 onClick={() => setOpenIndex(open ? -1 : i)}
-                className="flex w-full items-center justify-between gap-4 py-5 text-left transition-colors duration-200 hover:text-brand"
+                className="flex w-full items-center justify-between gap-4 py-5 text-left transition-colors duration-200 hover:text-brand-strong"
               >
                 <span className="flex items-center gap-3">
                   {Ico && (
-                    <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-brand/10 text-brand">
+                    <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-brand/10 text-brand-strong">
                       <Ico className="h-[18px] w-[18px]" strokeWidth={1.9} aria-hidden />
                     </span>
                   )}
@@ -86,7 +86,7 @@ export default function FaqAccordion({
                   </span>
                 </span>
                 <ChevronDown
-                  className={`h-5 w-5 flex-shrink-0 text-brand transition-transform duration-300 ${
+                  className={`h-5 w-5 flex-shrink-0 text-brand-strong transition-transform duration-300 ${
                     open ? "rotate-180" : ""
                   }`}
                   aria-hidden="true"

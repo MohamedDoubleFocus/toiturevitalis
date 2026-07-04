@@ -67,7 +67,7 @@ export default function LeadForm() {
           <div>
             <p className="eyebrow mb-4">Soumission gratuite</p>
             <h2 className="font-display text-[2.1rem] leading-[1.06] tracking-tightest text-white sm:text-[2.9rem]">
-              Obtenez votre inspection <span className="kw">gratuite.</span>
+              Obtenez votre inspection <span className="kw-bright">gratuite.</span>
             </h2>
             <p className="mt-5 max-w-md text-[1.05rem] leading-[1.7] text-white/80">
               Protégez votre toiture avant le prochain hiver. On l&apos;évalue
@@ -119,7 +119,7 @@ export default function LeadForm() {
                 <button
                   type="button"
                   onClick={() => setStatus("idle")}
-                  className="mt-6 text-[14px] font-semibold text-brand transition-colors duration-200 hover:text-brand-hover"
+                  className="mt-6 text-[14px] font-semibold text-brand-strong transition-colors duration-200 hover:text-navy"
                 >
                   Envoyer une autre demande
                 </button>
@@ -256,7 +256,7 @@ function Field({
         className="text-[13px] font-semibold text-navy"
       >
         {label}
-        {required && <span className="text-brand"> *</span>}
+        {required && <span className="text-brand-strong"> *</span>}
       </label>
       {children}
     </div>

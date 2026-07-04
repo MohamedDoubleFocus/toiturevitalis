@@ -27,15 +27,15 @@ function LogoLockup({ compact = false }: { compact?: boolean }) {
       aria-label="Toitures Vitalis — accueil"
       className="group flex items-center gap-2.5"
     >
-      {/* Icône seule extraite du lockup carré (le mot-symbole est recadré) */}
-      <span className="relative block h-11 w-12 shrink-0 overflow-hidden">
+      {/* Icône de marque (hexagone + chevron Miami blue) */}
+      <span className="relative block h-11 w-12 shrink-0">
         <Image
           src="/brand/logo.png"
           alt=""
-          width={59}
-          height={59}
+          fill
           priority
-          className="absolute left-1/2 top-0 max-w-none -translate-x-1/2"
+          sizes="48px"
+          className="object-contain"
         />
       </span>
       <span className="flex flex-col leading-none">
@@ -43,7 +43,7 @@ function LogoLockup({ compact = false }: { compact?: boolean }) {
           TOITURES VITALIS
         </span>
         {!compact && (
-          <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-brand">
+          <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-strong">
             Protection nano · Bardeaux
           </span>
         )}
@@ -109,7 +109,7 @@ export default function SiteNav() {
                     <li key={s.href}>
                       <Link
                         href={s.href}
-                        className="block rounded-lg px-3 py-2 text-[14px] font-medium text-navy/85 transition-colors duration-200 hover:bg-greylight hover:text-brand"
+                        className="block rounded-lg px-3 py-2 text-[14px] font-medium text-navy/85 transition-colors duration-200 hover:bg-greylight hover:text-brand-strong"
                       >
                         {s.name}
                       </Link>
@@ -124,9 +124,9 @@ export default function SiteNav() {
           <div className="flex items-center gap-2.5">
             <a
               href={`tel:${site.phoneHref}`}
-              className="hidden items-center gap-2 whitespace-nowrap rounded-lg px-2 py-2 text-[15px] font-semibold text-navy transition-colors duration-200 hover:text-brand xl:flex"
+              className="hidden items-center gap-2 whitespace-nowrap rounded-lg px-2 py-2 text-[15px] font-semibold text-navy transition-colors duration-200 hover:text-brand-strong xl:flex"
             >
-              <PhoneIcon className="h-[18px] w-[18px] text-brand" />
+              <PhoneIcon className="h-[18px] w-[18px] text-brand-strong" />
               {site.phoneDisplay}
             </a>
             <Link
@@ -180,7 +180,7 @@ export default function SiteNav() {
                       key={s.href}
                       href={s.href}
                       onClick={() => setOpen(false)}
-                      className="rounded-lg px-3 py-2 text-[15px] font-medium text-navy/85 transition-colors duration-200 hover:bg-greylight hover:text-brand"
+                      className="rounded-lg px-3 py-2 text-[15px] font-medium text-navy/85 transition-colors duration-200 hover:bg-greylight hover:text-brand-strong"
                     >
                       {s.name}
                     </Link>
@@ -200,7 +200,7 @@ export default function SiteNav() {
                 href={`tel:${site.phoneHref}`}
                 className="btn-outline-navy w-full"
               >
-                <PhoneIcon className="h-[18px] w-[18px] text-brand" />
+                <PhoneIcon className="h-[18px] w-[18px] text-brand-strong" />
                 {site.phoneDisplay}
               </a>
             </div>

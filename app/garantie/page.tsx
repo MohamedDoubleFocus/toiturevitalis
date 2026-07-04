@@ -177,7 +177,7 @@ export default function GarantiePage() {
                   <span className="text-[12px] font-semibold uppercase tracking-[0.06em] text-navy/70">
                     {d.product}
                   </span>
-                  <span className="mt-3 font-display text-[1.7rem] leading-none tracking-tightest text-brand">
+                  <span className="mt-3 font-display text-[1.7rem] leading-none tracking-tightest text-brand-strong">
                     {d.duration}
                   </span>
                   <span className="mt-3 text-[13px] font-medium text-greytext">
@@ -205,10 +205,10 @@ export default function GarantiePage() {
               <Reveal key={r.n} delay={i * 90}>
                 <div className="flex h-full flex-col rounded-2xl border border-greyborder bg-white p-7 shadow-card">
                   <div className="flex items-center gap-4">
-                    <span className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-brand/10 font-display text-[1.4rem] tracking-tightest text-brand">
+                    <span className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-brand/10 font-display text-[1.4rem] tracking-tightest text-brand-strong">
                       {r.n}
                     </span>
-                    <r.Icon className="h-6 w-6 text-brand" strokeWidth={1.8} aria-hidden />
+                    <r.Icon className="h-6 w-6 text-brand-strong" strokeWidth={1.8} aria-hidden />
                   </div>
                   <h3 className="mt-5 text-[1.25rem] font-bold text-navy">
                     {r.title}
@@ -233,7 +233,7 @@ export default function GarantiePage() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="eyebrow mb-4 justify-center">Pourquoi elle a de la valeur</p>
             <h2 className="font-display text-[2rem] leading-[1.08] tracking-tightest text-white sm:text-[2.5rem]">
-              Une garantie qui <span className="kw">compte.</span>
+              Une garantie qui <span className="kw-bright">compte.</span>
             </h2>
           </Reveal>
 
@@ -294,7 +294,7 @@ export default function GarantiePage() {
             {/* Encadré PDF officiel */}
             <Reveal delay={120}>
               <div className="mt-10 flex flex-col gap-5 rounded-2xl border border-brand/25 bg-brand/[0.05] p-6 shadow-card sm:flex-row sm:items-center sm:gap-6 sm:p-8">
-                <span className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-brand/12 text-brand">
+                <span className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-brand/12 text-brand-strong">
                   <FileText className="h-7 w-7" strokeWidth={1.8} aria-hidden />
                 </span>
                 <div className="flex-1">
@@ -309,7 +309,7 @@ export default function GarantiePage() {
                     rel="noopener noreferrer"
                     className="btn-outline-navy mt-4 !border-brand/40 text-[15px] text-navy hover:!border-brand"
                   >
-                    <FileText className="h-[18px] w-[18px] text-brand" aria-hidden />
+                    <FileText className="h-[18px] w-[18px] text-brand-strong" aria-hidden />
                     Consulter la garantie complète (PDF)
                     <ExternalLink className="h-4 w-4 text-greytext" aria-hidden />
                   </a>

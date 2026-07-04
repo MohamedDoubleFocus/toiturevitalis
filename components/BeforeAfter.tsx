@@ -40,7 +40,7 @@ export default function BeforeAfter() {
         className="object-cover"
         priority={false}
       />
-      <span className="pointer-events-none absolute right-4 top-4 z-20 rounded-full bg-brand px-3 py-1 text-[12px] font-semibold uppercase tracking-wide text-white shadow-cta">
+      <span className="pointer-events-none absolute right-4 top-4 z-20 rounded-full bg-brand px-3 py-1 text-[12px] font-semibold uppercase tracking-wide text-navy-deep shadow-cta">
         Après
       </span>
 
@@ -66,7 +66,7 @@ export default function BeforeAfter() {
         className="absolute inset-y-0 z-20 flex items-center justify-center"
         style={{ left: `${pos}%`, transform: "translateX(-50%)" }}
       >
-        <div className="h-full w-0.5 bg-white/90 shadow-[0_0_12px_rgba(15,27,42,0.5)]" />
+        <div className="h-full w-0.5 bg-white/90 shadow-[0_0_12px_rgba(0,0,0,0.5)]" />
         <button
           type="button"
           role="slider"

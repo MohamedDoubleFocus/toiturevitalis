@@ -68,7 +68,7 @@ const stats: { Icon: LucideIcon; node: React.ReactNode; label: string }[] = [
     node: (
       <>
         <CountUp target={50000} />
-        <span className="text-brand">+</span>
+        <span className="text-brand-strong">+</span>
       </>
     ),
     label: "toitures traitées en Amérique du Nord",
@@ -81,7 +81,7 @@ const stats: { Icon: LucideIcon; node: React.ReactNode; label: string }[] = [
           Jusqu&apos;à
         </span>
         <CountUp target={15} />
-        <span className="text-brand"> ans</span>
+        <span className="text-brand-strong"> ans</span>
       </>
     ),
     label: "de garantie fabricant écrite",
@@ -91,7 +91,7 @@ const stats: { Icon: LucideIcon; node: React.ReactNode; label: string }[] = [
     node: (
       <>
         <CountUp target={1} />
-        <span className="text-brand"> seule journée</span>
+        <span className="text-brand-strong"> seule journée</span>
       </>
     ),
     label: "d'application, sans arrachage",
@@ -117,7 +117,7 @@ export default function StatsBar() {
                 i > 0 ? "sm:border-l sm:border-greyborder sm:pl-8" : ""
               }`}
             >
-              <span className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand">
+              <span className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand/10 text-brand-strong">
                 <s.Icon className="h-[22px] w-[22px]" strokeWidth={1.8} />
               </span>
               <div className="font-display text-[2.5rem] leading-none tracking-tightest text-navy sm:text-[3rem]">
@@ -140,7 +140,7 @@ export default function StatsBar() {
                 key={b.text}
                 className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.05em] text-navy/75"
               >
-                <b.Icon className="h-[18px] w-[18px] text-brand" strokeWidth={2} />
+                <b.Icon className="h-[18px] w-[18px] text-brand-strong" strokeWidth={2} />
                 {b.text}
               </li>
             ))}

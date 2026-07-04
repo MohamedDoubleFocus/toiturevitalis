@@ -41,7 +41,7 @@ export default function MobileStickyCta() {
         href="/#soumission"
         onClick={handleClick}
         aria-label="Obtenir une soumission gratuite"
-        className="flex h-[54px] w-full items-center justify-center gap-2 rounded-xl bg-brand text-[16px] font-bold text-white shadow-[0_8px_24px_rgba(15,27,42,0.38)] transition-transform duration-200 active:scale-[0.98]"
+        className="flex h-[54px] w-full items-center justify-center gap-2 rounded-xl bg-brand text-[16px] font-bold text-navy-deep shadow-[0_8px_24px_rgba(84,195,234,0.5)] transition-transform duration-200 active:scale-[0.98]"
       >
         Soumission gratuite
         <ArrowRight className="h-5 w-5" strokeWidth={2.4} aria-hidden />

@@ -316,7 +316,7 @@ export default async function SecteurPage({
                 {s.climatePoints.map((p) => (
                   <li key={p} className="flex items-start gap-3">
                     <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-brand/12">
-                      <Check className="h-4 w-4 text-brand" strokeWidth={2.6} aria-hidden />
+                      <Check className="h-4 w-4 text-brand-strong" strokeWidth={2.6} aria-hidden />
                     </span>
                     <span className="text-[15px] leading-snug text-navy/85">{p}</span>
                   </li>
@@ -362,7 +362,7 @@ export default async function SecteurPage({
                   key={q}
                   className="inline-flex items-center gap-1.5 rounded-full border border-greyborder bg-white px-3.5 py-1.5 text-[14px] font-medium text-navy shadow-card"
                 >
-                  <MapPin className="h-3.5 w-3.5 text-brand" aria-hidden />
+                  <MapPin className="h-3.5 w-3.5 text-brand-strong" aria-hidden />
                   {q}
                 </span>
               ))}
@@ -374,7 +374,7 @@ export default async function SecteurPage({
               <Reveal key={item} delay={i * 70}>
                 <div className="flex h-full items-start gap-3 rounded-xl border border-greyborder bg-white p-4 shadow-card">
                   <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-brand/12">
-                    <Check className="h-4 w-4 text-brand" strokeWidth={2.6} aria-hidden />
+                    <Check className="h-4 w-4 text-brand-strong" strokeWidth={2.6} aria-hidden />
                   </span>
                   <span className="text-[14.5px] font-medium leading-snug text-navy">
                     {item}
@@ -400,7 +400,7 @@ export default async function SecteurPage({
             {etapes.map((e, i) => (
               <Reveal key={e.n} delay={i * 90}>
                 <div className="flex h-full flex-col rounded-2xl border border-greyborder bg-greylight p-7 shadow-card">
-                  <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-white font-display text-[1.4rem] tracking-tightest text-brand shadow-card">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-white font-display text-[1.4rem] tracking-tightest text-brand-strong shadow-card">
                     {e.n}
                   </span>
                   <h3 className="mt-5 text-[1.25rem] font-bold text-navy">{e.title}</h3>
@@ -432,7 +432,7 @@ export default async function SecteurPage({
                   className="group flex items-center justify-between gap-2 rounded-xl border border-greyborder bg-white px-4 py-3.5 shadow-card transition-[transform,border-color] duration-200 hover:-translate-y-0.5 hover:border-brand/40"
                 >
                   <span className="text-[15px] font-semibold text-navy">{a.name}</span>
-                  <ArrowRight className="h-4 w-4 text-brand transition-transform duration-200 group-hover:translate-x-0.5" />
+                  <ArrowRight className="h-4 w-4 text-brand-strong transition-transform duration-200 group-hover:translate-x-0.5" />
                 </Link>
               </Reveal>
             ))}
@@ -441,7 +441,7 @@ export default async function SecteurPage({
           <Reveal delay={200} className="mt-8 text-center">
             <Link
               href="/"
-              className="group inline-flex items-center gap-2 text-[1rem] font-semibold text-brand transition-colors duration-200 hover:text-brand-hover"
+              className="group inline-flex items-center gap-2 text-[1rem] font-semibold text-brand-strong transition-colors duration-200 hover:text-navy"
             >
               Retour à l&apos;accueil
               <ArrowRight className="h-[18px] w-[18px] transition-transform duration-200 group-hover:translate-x-1" />

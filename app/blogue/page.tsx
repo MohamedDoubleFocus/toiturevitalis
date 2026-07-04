@@ -103,13 +103,13 @@ export default function BloguePage() {
                         {a.readingMin} min
                       </span>
                     </div>
-                    <h2 className="mt-3 text-[1.2rem] font-bold leading-snug text-navy transition-colors duration-200 group-hover:text-brand">
+                    <h2 className="mt-3 text-[1.2rem] font-bold leading-snug text-navy transition-colors duration-200 group-hover:text-brand-strong">
                       {a.title}
                     </h2>
                     <p className="mt-2.5 flex-1 text-[15px] leading-[1.65] text-greytext">
                       {a.excerpt}
                     </p>
-                    <span className="mt-5 inline-flex items-center gap-2 text-[14.5px] font-semibold text-brand">
+                    <span className="mt-5 inline-flex items-center gap-2 text-[14.5px] font-semibold text-brand-strong">
                       Lire l&apos;article
                       <ArrowRight className="h-[16px] w-[16px] transition-transform duration-200 group-hover:translate-x-1" />
                     </span>

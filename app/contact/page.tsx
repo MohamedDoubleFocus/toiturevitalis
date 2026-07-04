@@ -133,7 +133,7 @@ export default function ContactPage() {
                   href={m.href}
                   className="group flex h-full flex-col items-center rounded-2xl border border-greyborder bg-greylight p-8 text-center shadow-card transition-[transform,border-color] duration-300 hover:-translate-y-1 hover:border-brand/40"
                 >
-                  <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand/10 text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-white">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand/10 text-brand-strong transition-colors duration-300 group-hover:bg-brand group-hover:text-navy-deep">
                     <m.Icon className="h-7 w-7" strokeWidth={1.8} aria-hidden />
                   </span>
                   <span className="mt-5 text-[12px] font-semibold uppercase tracking-[0.1em] text-greytext">

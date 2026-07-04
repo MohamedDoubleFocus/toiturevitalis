@@ -48,7 +48,7 @@ export default function Credibility() {
               {points.map((p) => (
                 <li key={p} className="flex items-start gap-3">
                   <span className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-brand/12">
-                    <Check className="h-4 w-4 text-brand" strokeWidth={2.6} aria-hidden />
+                    <Check className="h-4 w-4 text-brand-strong" strokeWidth={2.6} aria-hidden />
                   </span>
                   <span className="text-[15.5px] font-medium leading-snug text-navy">
                     {p}

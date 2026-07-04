@@ -279,7 +279,7 @@ export default function CommentCaFonctionnePage() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="eyebrow mb-4 justify-center">La science, simplement</p>
             <h2 className="font-display text-[2rem] leading-[1.08] tracking-tightest text-white sm:text-[2.5rem]">
-              La nanosilice, <span className="kw">expliquée.</span>
+              La nanosilice, <span className="kw-bright">expliquée.</span>
             </h2>
             <p className="mt-4 text-[1.02rem] leading-relaxed text-white/75">
               Sans jargon : ce qu&apos;elle est, comment elle est fabriquée et comment
@@ -336,7 +336,7 @@ export default function CommentCaFonctionnePage() {
             {effets.map((e, i) => (
               <Reveal key={e.title} delay={i * 90}>
                 <div className="h-full rounded-2xl border border-greyborder bg-greylight p-7 shadow-card">
-                  <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand">
+                  <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand-strong">
                     <e.Icon className="h-6 w-6" strokeWidth={1.9} />
                   </span>
                   <h3 className="text-[1.2rem] font-bold text-navy">{e.title}</h3>
@@ -381,7 +381,7 @@ export default function CommentCaFonctionnePage() {
                     <h3 className="font-display text-[1.3rem] tracking-tightest text-navy">
                       {p.title}
                     </h3>
-                    <p className="mt-1.5 text-[12.5px] font-semibold uppercase tracking-[0.06em] text-brand">
+                    <p className="mt-1.5 text-[12.5px] font-semibold uppercase tracking-[0.06em] text-brand-strong">
                       {p.subtitle}
                     </p>
                     <p className="mt-3 text-[15px] leading-[1.65] text-greytext">
@@ -413,7 +413,7 @@ export default function CommentCaFonctionnePage() {
             <Reveal className="lg:col-span-5">
               <p className="eyebrow mb-4">Conçu pour le Québec</p>
               <h2 className="font-display text-[2rem] leading-[1.08] tracking-tightest text-white sm:text-[2.5rem]">
-                Conçu pour nos <span className="kw">hivers.</span>
+                Conçu pour nos <span className="kw-bright">hivers.</span>
               </h2>
               <p className="mt-6 text-[1.05rem] leading-[1.7] text-white/80">
                 Le climat québécois est exigeant pour une toiture. Le traitement nano agit
@@ -474,7 +474,7 @@ export default function CommentCaFonctionnePage() {
               {etapes.map((s, i) => (
                 <Reveal key={s.n} delay={i * 90}>
                   <div className="flex gap-5 py-5">
-                    <span className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-white font-display text-[1.4rem] tracking-tightest text-brand shadow-card">
+                    <span className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-white font-display text-[1.4rem] tracking-tightest text-brand-strong shadow-card">
                       {s.n}
                     </span>
                     <div className="pt-1">
