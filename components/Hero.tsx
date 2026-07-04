@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import HeroVideo from "@/components/HeroVideo";
 import { PhoneIcon, ArrowRight, Check } from "@/components/icons";
 
 const trust = [
@@ -11,19 +12,8 @@ const trust = [
 export default function Hero() {
   return (
     <section className="relative isolate flex min-h-[88vh] items-center overflow-hidden bg-navy-deep">
-      {/* Fond vidéo + poster (LCP). Autoplay muted loop, poster instantané. */}
-      <video
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-        poster="/images/hero.jpg"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
-      >
-        <source src="/videos/hero-video.mp4" type="video/mp4" />
-      </video>
+      {/* Fond vidéo + poster (LCP). Autoplay muet prioritaire ; sinon poster seul. */}
+      <HeroVideo />
 
       {/* Overlay navy (lisibilité) + vignette */}
       <div

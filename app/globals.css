@@ -275,6 +275,21 @@ html:not(.js) .reveal {
   font-size: 0.9rem;
 }
 
+/* Vidéos autoplay (hero + preuves) : jamais de contrôles ni de bouton play natif.
+   Si l'autoplay est bloqué (ex. iOS mode économie d'énergie), seul le poster
+   s'affiche — proprement, sans overlay de lecture. */
+video::-webkit-media-controls,
+video::-webkit-media-controls-enclosure,
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-start-playback-button,
+video::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+  appearance: none;
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
 /* Traitement chromatique des photos : unité navy (mix-blend léger via overlay) */
 .photo-treat {
   position: relative;
