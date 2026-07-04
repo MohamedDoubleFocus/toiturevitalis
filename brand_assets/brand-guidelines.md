@@ -31,11 +31,11 @@
 - `--brand` (`#54C3EA`) vif → uniquement sur **fond noir/sombre** (héros, sections navy), en **fond de bouton**, en glow, en bordure/fill à faible opacité, et pour les **icônes dans une pastille teintée**.
 - `--brand-strong` (`#0E7BA6`) → dès qu'un **texte, lien, chiffre ou petite icône bleue** se pose sur **fond blanc/clair** (nav, stats, cartes, liens « en savoir plus »). Ne jamais mettre `#54C3EA` en texte sur blanc (illisible).
 - **Texte sur un fond Miami blue plein** (boutons, badges `bg-brand`) = **NOIR** (`--navy-deep`), jamais blanc.
-- Mot-clé de titre : classe `.kw` = `brand-strong` par défaut (titres sur fond clair) ; `.kw-bright` = `#54C3EA` sur les héros/sections sombres.
+- **Mot-clé de titre = SURLIGNÉ** (façon marqueur) : fond Miami blue `#54C3EA` + **texte noir** (classe `.kw`). Noir sur cyan = lisible sur fond clair ET sombre — une seule variante partout. Remplace l'ancien « texte bleu ».
 
 **Usage clé :**
 - Barre de navigation : fond blanc flottant, texte noir, bouton CTA Miami blue (texte noir).
-- Section héros : photo de toiture avec **overlay noir** (`--navy-deep` ~55–85%) → texte blanc + mot-clé `#54C3EA` par-dessus.
+- Section héros : photo de toiture avec **overlay noir** (`--navy-deep` ~55–85%) → texte blanc + mot-clé **surligné** `#54C3EA` (texte noir) par-dessus.
 - Bandeau de confiance sous le héros : fond gris très clair (`--grey-light`), chiffres avec suffixe en `brand-strong`.
 
 ---
@@ -58,8 +58,8 @@
 
 | Élément | Police | Taille | Poids | Line-height | Letter-spacing | Couleur |
 |---|---|---|---|---|---|---|
-| H1 héros | Archivo Black | **60–76px** | 400 (Archivo Black est déjà très gras) | 1.0 | -0.02em | Blanc, **mot-clé en `--brand` (#54C3EA)** |
-| H2 section | Archivo Black | 38–48px | 400 | 1.1 | -0.02em | `--navy` |
+| H1 héros | Figtree 800 | **60–76px** | 800 | 1.14 | -0.03em | Blanc, **mot-clé SURLIGNÉ `#54C3EA` (texte noir)** |
+| H2 section | Figtree 800 | 38–48px | 800 | 1.1 | -0.03em | `--navy` |
 | H3 sous-titre | Inter | 22–26px | 700 | 1.2 | normal | `--navy` |
 | Sous-titre héros | Inter | 18–20px | 400 | 1.6 | normal | Blanc 90% opacité |
 | Corps | Inter | 16–18px | 400 | 1.7 | normal | `--grey-text` |
@@ -86,7 +86,7 @@
 ### B. Section héros (pleine largeur, sombre)
 - Fond : **photo de toiture** en angle dramatique + **overlay navy** (`--navy-deep` ~55% opacité, ou dégradé `from-navy-deep/70 to-navy-deep/40`).
 - Contenu **centré**, largeur max ~900px :
-  1. **H1 Archivo Black géant** (60–76px), blanc, avec **le mot-clé important en `--blue`** et un **point final** (ex. « Protégez votre toiture avant le **prochain hiver.** »).
+  1. **H1 Figtree 800 géant** (60–76px), blanc, avec **le mot-clé important SURLIGNÉ Miami blue (texte noir)** et un **point final** (ex. « Protégez votre toiture avant le **prochain hiver.** »).
   2. **Sous-titre** Inter 18–20px, blanc 90%, 2–3 lignes max, largeur limitée pour la lisibilité.
   3. **Deux boutons côte à côte :**
      - Principal : fond `--blue`, texte blanc, « Obtenez une inspection gratuite ».
@@ -99,7 +99,7 @@
 
 ### D. Sections suivantes (fond blanc, alternance gris clair)
 - Services, À propos, Galerie, Témoignages, CTA final.
-- Titres H2 en Archivo Black navy, corps en Inter gris.
+- Titres H2 en Figtree 800 noir, corps en Figtree gris.
 - Cartes avec coins arrondis (~12px) et ombre douce teintée navy à faible opacité.
 
 ---
@@ -155,7 +155,7 @@ padding: 14px 28px;
 ## 7. TON & CONTENU (voix de marque)
 
 - Confiant, honnête, québécois, professionnel. Jamais de sur-promesse.
-- **Structure de titre signature** : phrase blanche/noire + **mot-clé en Miami blue** + point final.
+- **Structure de titre signature** : phrase blanche/noire + **mot-clé SURLIGNÉ Miami blue (texte noir, façon marqueur)** + point final.
   - Ex. « Prolongez la vie de votre toiture de **plusieurs années.** »
   - Ex. « La protection nano, à **une fraction du prix.** »
 - CTA récurrents : « Inspection gratuite », « Obtenez votre soumission », « Parlez à un expert ».
@@ -167,10 +167,10 @@ padding: 14px 28px;
 
 ```
 FONTS       Figtree partout (Google Fonts, variable) | Titres = Figtree 800 | Corps = Figtree 400-600
-H1 HÉRO     Archivo Black 60-76px, blanc, mot-clé en #54C3EA, point final
+H1 HÉRO     Figtree 800 60-76px, blanc, mot-clé SURLIGNÉ #54C3EA (texte noir), point final
 COULEURS    #111418 noir | #54C3EA Miami blue | #0E7BA6 cyan-texte-sur-clair | #FFFFFF | #000000 overlay | #5A6B7B texte | #F4F6F8 fond clair
 LISIBILITÉ  #54C3EA = seulement sur NOIR / en fond de bouton | texte bleu sur BLANC = #0E7BA6 | texte SUR bouton cyan = NOIR
-HÉRO        Photo toiture + overlay noir 55-85% + H1 géant + mot-clé #54C3EA + 2 boutons (cyan plein texte noir / contour tél)
+HÉRO        Photo toiture + overlay noir 55-85% + H1 géant + mot-clé SURLIGNÉ #54C3EA + 2 boutons (cyan plein texte noir / contour tél)
 NAV         Barre blanche flottante + logo gauche + menu centre + CTA Miami blue (texte noir) droite
 CTA         Fond #54C3EA, texte NOIR, radius 8px, lueur cyan faible opacité, hover #2AA8D6
 STYLE       Noir premium + accents Miami blue, overlay noir sur photos, arrondis modérés, ombres teintées

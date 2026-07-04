@@ -111,7 +111,7 @@ html:not(.js) .reveal {
     font-family: var(--font-figtree), system-ui, sans-serif;
     font-weight: 800;
     letter-spacing: -0.03em;
-    line-height: 1.05;
+    line-height: 1.14; /* respiration pour les mots-clés surlignés multi-lignes */
   }
 
   /* Figtree n'a pas de graisse « black » native → on force le gras partout
@@ -120,13 +120,16 @@ html:not(.js) .reveal {
     font-weight: 800;
   }
 
-  /* Mot-clé : cyan foncé LISIBLE par défaut (cas courant = titre sur fond clair). */
-  .kw {
-    color: var(--brand-strong);
-  }
-  /* Sur FOND SOMBRE (héros, sections noires) : cyan Miami vif qui ressort. */
+  /* Mot-clé signature : SURLIGNÉ Miami blue + texte noir (façon marqueur).
+     Noir sur cyan = lisible sur fond clair ET sombre → une seule variante suffit. */
+  .kw,
   .kw-bright {
-    color: var(--brand);
+    background-color: var(--brand);
+    color: #08131a;
+    padding: 0.04em 0.26em;
+    border-radius: 5px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 
   /* Bouton principal (CTA Miami blue, texte NOIR pour le contraste + le look) */
