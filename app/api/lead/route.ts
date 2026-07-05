@@ -21,10 +21,21 @@ export async function POST(req: Request) {
       );
     }
 
-    const { name, email, phone, sector, message, company } = data as Record<
-      string,
-      string
-    >;
+    const {
+      name,
+      email,
+      phone,
+      address,
+      message,
+      company,
+      language,
+      utm_source,
+      utm_medium,
+      utm_campaign,
+      gclid,
+      landing_page,
+      referrer,
+    } = data as Record<string, string>;
 
     // Honeypot anti-pourriel : un bot remplit ce champ caché → on ignore silencieusement.
     if (company) {
@@ -44,22 +55,20 @@ export async function POST(req: Request) {
       );
     }
 
-    // Sépare le nom pour faciliter le mappage dans GHL (first/last).
-    const parts = name.trim().split(/\s+/);
-    const firstName = parts.shift() || name.trim();
-    const lastName = parts.join(" ");
-
+    // Payload transmis au webhook GHL — format attendu (mêmes clés) + attribution de source.
     const payload = {
-      first_name: firstName,
-      last_name: lastName,
-      full_name: name.trim(),
       name: name.trim(),
-      email: email.trim(),
       phone: phone.trim(),
-      secteur: sector || "",
-      city: sector || "",
-      message: message || "",
-      source: "Site web — Toitures Vitalis (formulaire de soumission)",
+      email: email.trim(),
+      address: (address || "").trim(),
+      message: (message || "").trim(),
+      language: language || "fr",
+      utm_source: utm_source || "",
+      utm_medium: utm_medium || "",
+      utm_campaign: utm_campaign || "",
+      gclid: gclid || "",
+      landing_page: landing_page || "",
+      referrer: referrer || "",
     };
 
     // Transfert vers GHL (avec délai maximal pour ne pas bloquer).

@@ -10,6 +10,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { site } from "@/lib/site";
+import { getTrackingData, pushDataLayer } from "@/lib/tracking";
 
 const perks = [
   { Icon: Check, text: "Gratuit et sans engagement" },
@@ -30,7 +31,20 @@ export default function LeadForm() {
 
     const form = e.currentTarget;
     const fd = new FormData(form);
-    const payload = Object.fromEntries(fd.entries());
+    const fields = Object.fromEntries(fd.entries());
+    const track = getTrackingData();
+
+    // Payload au format attendu par le webhook GHL (+ attribution de source).
+    const payload = {
+      ...fields, // name, phone, email, address, message, company (honeypot)
+      language: "fr",
+      utm_source: track.utm_source,
+      utm_medium: track.utm_medium,
+      utm_campaign: track.utm_campaign,
+      gclid: track.gclid,
+      landing_page: track.landing_page,
+      referrer: track.referrer,
+    };
 
     try {
       const res = await fetch("/api/lead", {
@@ -40,6 +54,8 @@ export default function LeadForm() {
       });
       const json = await res.json().catch(() => ({ ok: false }));
       if (res.ok && json.ok) {
+        // Conversion → GTM via dataLayer.
+        pushDataLayer("form_submit_lead");
         setStatus("success");
         form.reset();
       } else {
@@ -175,23 +191,15 @@ export default function LeadForm() {
                   />
                 </Field>
 
-                <Field label="Votre secteur" htmlFor="sector">
-                  <select
-                    id="sector"
-                    name="sector"
-                    defaultValue=""
+                <Field label="Adresse de la propriété" htmlFor="address">
+                  <input
+                    id="address"
+                    name="address"
+                    type="text"
+                    autoComplete="street-address"
+                    placeholder="123 rue Principale, Montréal"
                     className="form-input"
-                  >
-                    <option value="" disabled>
-                      Sélectionnez…
-                    </option>
-                    {site.areaServed.map((s) => (
-                      <option key={s} value={s}>
-                        {s}
-                      </option>
-                    ))}
-                    <option value="Autre">Autre</option>
-                  </select>
+                  />
                 </Field>
 
                 <Field label="Parlez-nous de votre toiture (optionnel)" htmlFor="message">

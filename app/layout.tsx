@@ -7,6 +7,7 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import MobileStickyCta from "@/components/MobileStickyCta";
 import JsonLd from "@/components/JsonLd";
+import LeadTracking from "@/components/LeadTracking";
 
 // Police unique de marque : Figtree (variable, graisses 300–900) — titres ET corps.
 const figtree = Figtree({
@@ -78,6 +79,7 @@ export default function RootLayout({
             __html: "document.documentElement.classList.add('js')",
           }}
         />
+        <LeadTracking />
         <AnnouncementBar />
         <SiteNav />
         {children}
