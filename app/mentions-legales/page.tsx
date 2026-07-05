@@ -31,7 +31,7 @@ export default function MentionsLegalesPage() {
         <br />
         Téléphone : {site.phoneDisplay}
         <br />
-        Adresse : [Adresse de l&apos;entreprise à compléter]
+        Adresse : {site.address.full}
         <br />
         Territoire desservi : {site.region}
       </p>

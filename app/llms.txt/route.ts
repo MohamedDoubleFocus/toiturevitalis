@@ -88,6 +88,8 @@ ${articles
 
 - Téléphone : ${site.phoneDisplay}
 - Courriel : ${site.email}
+- Adresse : ${site.address.full}
+- Heures : ${site.hours.label}
 - Zone desservie : ${site.region}
 - Soumission : inspection gratuite et sans pression via le formulaire du site.
 

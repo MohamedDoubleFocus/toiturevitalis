@@ -20,6 +20,23 @@ export const site = {
     "Rive-Nord",
     "Rive-Sud",
   ],
+  address: {
+    streetAddress: "2-7405 rue Vérité",
+    locality: "Montréal",
+    region: "QC",
+    postalCode: "H4S 1C6",
+    country: "CA",
+    full: "2-7405 rue Vérité, Montréal, QC H4S 1C6",
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=2-7405+rue+V%C3%A9rit%C3%A9%2C+Montr%C3%A9al%2C+QC+H4S+1C6",
+  },
+  hours: {
+    // Lundi au samedi 8 h–18 h, dimanche fermé.
+    label: "Lun. au sam. : 8 h à 18 h · Dimanche fermé",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "08:00",
+    closes: "18:00",
+  },
 } as const;
 
 /** Document de garantie officiel GoNano (dans /public/documents/). */

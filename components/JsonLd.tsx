@@ -2,8 +2,8 @@ import { site } from "@/lib/site";
 
 /**
  * Données structurées LocalBusiness (sous-type RoofingContractor) — sur toutes les pages.
- * NOTE : téléphone, adresse, horaires et coordonnées géo sont des valeurs à confirmer
- * avec l'entreprise avant la mise en ligne (voir lib/site.ts).
+ * NOTE : coordonnées géo approximatives (Montréal) — le Google Business Profile fait foi
+ * pour la géolocalisation exacte.
  */
 export default function JsonLd() {
   const schema = {
@@ -22,9 +22,11 @@ export default function JsonLd() {
     slogan: "Protéger et prolonger votre toiture, honnêtement.",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Montréal",
-      addressRegion: "QC",
-      addressCountry: "CA",
+      streetAddress: site.address.streetAddress,
+      addressLocality: site.address.locality,
+      addressRegion: site.address.region,
+      postalCode: site.address.postalCode,
+      addressCountry: site.address.country,
     },
     geo: {
       "@type": "GeoCoordinates",
@@ -38,9 +40,9 @@ export default function JsonLd() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "17:00",
+        dayOfWeek: [...site.hours.days],
+        opens: site.hours.opens,
+        closes: site.hours.closes,
       },
     ],
     additionalProperty: [

@@ -57,6 +57,15 @@ export default function SiteFooter() {
               >
                 {site.email}
               </a>
+              <a
+                href={site.address.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block not-italic text-white/70 transition-colors duration-200 hover:text-brand"
+              >
+                {site.address.full}
+              </a>
+              <p className="text-white/55">{site.hours.label}</p>
             </div>
           </div>
 
