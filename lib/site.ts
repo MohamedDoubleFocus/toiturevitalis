@@ -10,9 +10,8 @@ export const site = {
   // URL canonique (à confirmer). Sert de metadataBase + JSON-LD.
   url: "https://www.toituresvitalis.ca",
   email: "info@toituresvitalis.ca",
-  // PLACEHOLDER — remplacer par le vrai numéro de téléphone de l'entreprise.
-  phoneDisplay: "514 000-0000",
-  phoneHref: "+15140000000",
+  phoneDisplay: "514 500-7367",
+  phoneHref: "+15145007367",
   region: "Grand Montréal",
   areaServed: [
     "Montréal",
