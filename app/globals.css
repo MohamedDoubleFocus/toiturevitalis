@@ -125,15 +125,25 @@ html:not(.js) .reveal {
      lettres sans trop déborder au-dessus/dessous. Noir sur cyan = lisible partout. */
   .kw,
   .kw-bright {
+    position: relative;
+    z-index: 0;
     color: #08131a;
-    background-image: linear-gradient(var(--brand), var(--brand));
-    background-repeat: no-repeat;
-    background-size: 100% 0.96em;
-    background-position: 0 54%;
-    padding: 0 0.2em;
-    border-radius: 4px;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
+    padding: 0 0.22em;
+    white-space: nowrap; /* garde le mot-clé sur 1 ligne → bande arrondie toujours propre */
+  }
+  /* Bande de fond ARRONDIE, hauteur contrôlée, posée DERRIÈRE le texte */
+  .kw::before,
+  .kw-bright::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 0.96em;
+    transform: translateY(-50%);
+    background-color: var(--brand);
+    border-radius: 6px;
+    z-index: -1;
   }
 
   /* Bouton principal (CTA Miami blue, texte NOIR pour le contraste + le look) */
