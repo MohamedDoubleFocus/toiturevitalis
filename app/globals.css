@@ -121,13 +121,17 @@ html:not(.js) .reveal {
   }
 
   /* Mot-clé signature : SURLIGNÉ Miami blue + texte noir (façon marqueur).
-     Noir sur cyan = lisible sur fond clair ET sombre → une seule variante suffit. */
+     La bande de fond a une HAUTEUR LIMITÉE (background-size) pour épouser les
+     lettres sans trop déborder au-dessus/dessous. Noir sur cyan = lisible partout. */
   .kw,
   .kw-bright {
-    background-color: var(--brand);
     color: #08131a;
-    padding: 0.04em 0.26em;
-    border-radius: 5px;
+    background-image: linear-gradient(var(--brand), var(--brand));
+    background-repeat: no-repeat;
+    background-size: 100% 0.82em;
+    background-position: 0 center;
+    padding: 0 0.2em;
+    border-radius: 3px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }

@@ -58,10 +58,10 @@ export default function MentionsLegalesPage() {
       <h2>Marques et contenus de tiers</h2>
       <p>
         Les marques et produits mentionnés sur le Site — notamment{" "}
-        <strong>GoNano</strong> et <strong>NuRoof</strong> (Fortify, Revive, Bio-Boost),
+        <strong>GoNano®</strong> et <strong>NuRoof</strong> (Fortify, Revive, Bio-Boost),
         ainsi que l&apos;émission <em>Dans l&apos;œil du dragon</em> — appartiennent à
         leurs propriétaires respectifs. Leur mention n&apos;implique aucun lien
-        commercial autre que celui d&apos;applicateur certifié de la technologie GoNano.
+        commercial autre que celui d&apos;applicateur certifié de la technologie GoNano®.
       </p>
 
       <h2>Limitation de responsabilité</h2>
@@ -77,7 +77,7 @@ export default function MentionsLegalesPage() {
       <h2>Liens externes</h2>
       <p>
         Le Site peut contenir des liens vers des ressources externes (par exemple le
-        document de garantie GoNano). Toitures Vitalis n&apos;exerce aucun contrôle sur
+        document de garantie GoNano®). Toitures Vitalis n&apos;exerce aucun contrôle sur
         le contenu de ces sites tiers et décline toute responsabilité à leur égard.
       </p>
 

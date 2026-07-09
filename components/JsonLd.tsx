@@ -18,7 +18,7 @@ export default function JsonLd() {
     email: site.email,
     priceRange: "$$",
     description:
-      "Traitement nanotechnologique de protection pour bardeaux d'asphalte. Prolonge la vie utile de votre toiture à une fraction du coût d'un remplacement. Certifié GoNano, licencié et assuré.",
+      "Traitement nanotechnologique de protection pour bardeaux d'asphalte. Prolonge la vie utile de votre toiture à une fraction du coût d'un remplacement. Certifié GoNano®, licencié et assuré.",
     slogan: "Protéger et prolonger votre toiture, honnêtement.",
     address: {
       "@type": "PostalAddress",
@@ -49,7 +49,7 @@ export default function JsonLd() {
       {
         "@type": "PropertyValue",
         name: "Certification",
-        value: "Entrepreneur certifié GoNano",
+        value: "Entrepreneur certifié GoNano®",
       },
     ],
   };

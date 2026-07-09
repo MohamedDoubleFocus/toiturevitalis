@@ -2,7 +2,7 @@ const items = [
   "Application en 1 seule journée",
   "Prolongez votre toiture de 10 à 15 ans",
   "Inspection GRATUITE",
-  "Certifié GoNano",
+  "Certifié GoNano®",
   "Licencié et assuré",
 ];
 

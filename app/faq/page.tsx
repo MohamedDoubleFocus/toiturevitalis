@@ -95,7 +95,7 @@ const categories: {
       {
         icon: "shield",
         q: "Est-ce que ça annule la garantie de mes bardeaux ?",
-        a: "Non. Le traitement GoNano n'annule pas les garanties existantes du fabricant de vos bardeaux. Et si jamais un enjeu survenait, GoNano vous appuie dans le processus de réclamation auprès du fabricant.",
+        a: "Non. Le traitement GoNano® n'annule pas les garanties existantes du fabricant de vos bardeaux. Et si jamais un enjeu survenait, GoNano® vous appuie dans le processus de réclamation auprès du fabricant.",
       },
       {
         icon: "file",
@@ -132,7 +132,7 @@ const allFaqs = categories.flatMap((c) => c.items);
 
 function CredibilityBand() {
   const badges: { Icon: LucideIcon; label: string }[] = [
-    { Icon: ShieldCheck, label: "Certifié GoNano" },
+    { Icon: ShieldCheck, label: "Certifié GoNano®" },
     { Icon: FlaskConical, label: "1 M$+ investi en tests" },
     { Icon: Home, label: "Licencié et assuré" },
   ];

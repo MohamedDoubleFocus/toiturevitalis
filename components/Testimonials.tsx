@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     quote:
-      "J'étais au point où je devais envisager des remplacements, et GoNano a redonné une seconde vie à mes bardeaux.",
+      "J'étais au point où je devais envisager des remplacements, et GoNano® a redonné une seconde vie à mes bardeaux.",
     author: "Micheal Kelly",
   },
 ];
@@ -25,7 +25,7 @@ function GoNanoBadge() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/images/logo-go-nano.svg"
-        alt="GoNano"
+        alt="GoNano®"
         width={66}
         height={20}
         className="h-5 w-auto"
@@ -46,7 +46,7 @@ export default function Testimonials() {
             Ce que disent <span className="kw">nos clients.</span>
           </h2>
           <p className="mt-4 text-[1.02rem] leading-relaxed text-greytext">
-            Des utilisateurs du traitement nano GoNano partagent leur expérience.
+            Des utilisateurs du traitement nano GoNano® partagent leur expérience.
           </p>
         </Reveal>
 
@@ -74,7 +74,7 @@ export default function Testimonials() {
 
         <Reveal delay={140}>
           <p className="mt-8 text-center text-[13px] italic text-greytext">
-            Témoignages de clients ayant utilisé le traitement nano GoNano.
+            Témoignages de clients ayant utilisé le traitement nano GoNano®.
           </p>
         </Reveal>
       </div>

@@ -55,21 +55,21 @@ const inclus = [
 const produits = [
   {
     img: "/images/Nuroof-fortify.png",
-    alt: "Produit GoNano NuRoof Fortify pour toitures récentes",
+    alt: "Produit GoNano® NuRoof Fortify pour toitures récentes",
     title: "NuRoof Fortify",
     subtitle: "Toitures récentes (moins de 5 ans)",
     desc: "Un bouclier préventif pour protéger un toit encore neuf. Nanotechnologie haute concentration + bio-huile. Prolongation jusqu'à 15 ans.",
   },
   {
     img: "/images/Nuroof-revive.png",
-    alt: "Produit GoNano NuRoof Revive pour toitures de 5 à 20 ans",
+    alt: "Produit GoNano® NuRoof Revive pour toitures de 5 à 20 ans",
     title: "NuRoof Revive",
     subtitle: "Toitures de 5 à 20 ans",
     desc: "Restaure et protège un toit qui commence à vieillir. Nanotechnologie avancée qui redonne flexibilité et résistance. Prolongation jusqu'à 10 ans.",
   },
   {
     img: "/images/Nuroof-bioboost.png",
-    alt: "Produit GoNano NuRoof Bio-Boost pour toitures de 10 ans et plus",
+    alt: "Produit GoNano® NuRoof Bio-Boost pour toitures de 10 ans et plus",
     title: "Bio-Boost",
     subtitle: "Toitures de 10 ans et plus",
     desc: "Solution économique pour les toitures vieillissantes. Nanotechnologie + bio-huiles renouvelables. Prolongation de 3 à 5 ans.",
@@ -97,7 +97,7 @@ export default function ServicesPage() {
     serviceType: "Traitement nano de toiture résidentielle",
     name: "Traitement nano de toiture résidentielle — Toitures Vitalis",
     description:
-      "Traitement nanotechnologique GoNano pour bardeaux d'asphalte résidentiels. Protège et prolonge la toiture de 10 à 15 ans, sans arrachage ni remplacement. Certifié GoNano.",
+      "Traitement nanotechnologique GoNano® pour bardeaux d'asphalte résidentiels. Protège et prolonge la toiture de 10 à 15 ans, sans arrachage ni remplacement. Certifié GoNano®.",
     category: "Residential roof protection",
     provider: { "@id": `${site.url}/#business` },
     areaServed: site.areaServed.map((name) => ({ "@type": "City", name })),
@@ -120,7 +120,7 @@ export default function ServicesPage() {
         eyebrow="Nos services"
         titleLead="Nos services de protection de"
         titleKeyword="toiture."
-        subtitle="Toitures Vitalis se spécialise dans la protection des toitures résidentielles en bardeaux d'asphalte grâce à la nanotechnologie GoNano. Prolongez la vie de votre toit, sans remplacement coûteux."
+        subtitle="Toitures Vitalis se spécialise dans la protection des toitures résidentielles en bardeaux d'asphalte grâce à la nanotechnologie GoNano®. Prolongez la vie de votre toit, sans remplacement coûteux."
         bgImage="/images/man-spraying-roof.jpg"
         bgAlt="Application professionnelle du traitement nano sur une toiture résidentielle"
         breadcrumb={[{ label: "Accueil", href: "/" }, { label: "Services" }]}
@@ -153,7 +153,7 @@ export default function ServicesPage() {
               </h2>
               <p className="mt-6 text-[1.05rem] leading-[1.75] text-greytext">
                 Toitures Vitalis se concentre exclusivement sur les toitures
-                résidentielles en bardeaux d&apos;asphalte. Notre traitement nano GoNano
+                résidentielles en bardeaux d&apos;asphalte. Notre traitement nano GoNano®
                 redonne flexibilité et protection à vos bardeaux, prolongeant leur vie de
                 10 à 15 ans — idéal pour une toiture encore en bon état qu&apos;on veut
                 préserver.
@@ -227,7 +227,7 @@ export default function ServicesPage() {
               Un produit pour chaque <span className="kw">toiture.</span>
             </h2>
             <p className="mt-4 text-[1.02rem] leading-relaxed text-greytext">
-              Trois formulations GoNano, adaptées à l&apos;âge et à l&apos;état de votre
+              Trois formulations GoNano®, adaptées à l&apos;âge et à l&apos;état de votre
               toit.
             </p>
           </Reveal>
@@ -237,7 +237,7 @@ export default function ServicesPage() {
             <div className="relative aspect-[16/7] overflow-hidden rounded-2xl border border-greyborder bg-white shadow-card">
               <Image
                 src="/images/produits-nuroof-ensemble.jpg"
-                alt="Gamme de produits GoNano NuRoof : Fortify, Revive et Bio-Boost"
+                alt="Gamme de produits GoNano® NuRoof : Fortify, Revive et Bio-Boost"
                 fill
                 sizes="(max-width: 1024px) 100vw, 1200px"
                 className="object-cover"

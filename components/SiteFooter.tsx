@@ -115,7 +115,7 @@ export default function SiteFooter() {
             <ul className="mt-4 space-y-3 text-[14.5px] text-white/70">
               <li className="flex flex-col">
                 <span className="font-semibold text-white">Certification</span>
-                <span>Entrepreneur certifié GoNano</span>
+                <span>Entrepreneur certifié GoNano®</span>
               </li>
               <li className="flex flex-col">
                 <span className="font-semibold text-white">Assurance</span>
@@ -140,7 +140,7 @@ export default function SiteFooter() {
 
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-7 text-[13px] text-white/55 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {year} {site.name}. Tous droits réservés. · Certifié GoNano · Licencié
+            © {year} {site.name}. Tous droits réservés. · Certifié GoNano® · Licencié
             et assuré
           </p>
           <div className="flex items-center gap-5">

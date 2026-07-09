@@ -4,7 +4,7 @@ import HeroVideo from "@/components/HeroVideo";
 import { PhoneIcon, ArrowRight, Check } from "@/components/icons";
 
 const trust = [
-  "Certifié GoNano",
+  "Certifié GoNano®",
   "Licencié et assuré",
   "Sans arrachage",
 ];
@@ -47,7 +47,7 @@ export default function Hero() {
             className="mt-6 max-w-2xl animate-fade-up text-[1.05rem] leading-relaxed text-white/90 sm:text-[1.15rem]"
             style={{ animationDelay: "0.2s" }}
           >
-            Traitement nano certifié GoNano — appliqué en une journée, sans
+            Traitement nano certifié GoNano® — appliqué en une journée, sans
             arrachage, à une fraction du coût d&apos;un remplacement.
           </p>
 

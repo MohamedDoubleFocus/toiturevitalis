@@ -38,6 +38,7 @@ export default function LeadForm() {
     const payload = {
       ...fields, // name, phone, email, address, message, company (honeypot)
       language: "fr",
+      source: track.source,
       utm_source: track.utm_source,
       utm_medium: track.utm_medium,
       utm_campaign: track.utm_campaign,
@@ -54,8 +55,8 @@ export default function LeadForm() {
       });
       const json = await res.json().catch(() => ({ ok: false }));
       if (res.ok && json.ok) {
-        // Conversion → GTM via dataLayer.
-        pushDataLayer("form_submit_lead");
+        // Conversion → GTM via dataLayer (avec la source du lead).
+        pushDataLayer("form_submit_lead", { lead_source: track.source });
         setStatus("success");
         form.reset();
       } else {

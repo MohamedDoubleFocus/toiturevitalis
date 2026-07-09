@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     absolute: "À Propos | Experts en Protection de Toiture | Toitures Vitalis",
   },
   description:
-    "Entrepreneur certifié GoNano, licencié et assuré. Une approche honnête et sans pression de la protection de toiture au Grand Montréal.",
+    "Entrepreneur certifié GoNano®, licencié et assuré. Une approche honnête et sans pression de la protection de toiture au Grand Montréal.",
   alternates: { canonical: "/a-propos" },
   openGraph: {
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "Une approche honnête de la protection de toiture | Toitures Vitalis",
     description:
-      "Certifié GoNano, licencié et assuré. On évalue honnêtement, on ne survend pas — notre réputation vaut plus qu'une vente.",
+      "Certifié GoNano®, licencié et assuré. On évalue honnêtement, on ne survend pas — notre réputation vaut plus qu'une vente.",
     images: [
       {
         url: "/images/worker-and-van.jpg",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "À propos | Une approche honnête de la protection de toiture",
     description:
-      "Certifié GoNano, licencié et assuré. On évalue honnêtement, sans pression.",
+      "Certifié GoNano®, licencié et assuré. On évalue honnêtement, sans pression.",
     images: ["/images/worker-and-van.jpg"],
   },
 };
@@ -56,7 +56,7 @@ const valeurs: { Icon: LucideIcon; title: string; text: string }[] = [
   },
   {
     Icon: BadgeCheck,
-    title: "Certifié GoNano",
+    title: "Certifié GoNano®",
     text: "On applique une technologie éprouvée, testée et reconnue.",
   },
   {

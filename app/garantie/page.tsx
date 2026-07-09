@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "Une garantie écrite, transparente et transférable | Toitures Vitalis",
     description:
-      "Le traitement nano GoNano est appuyé par une garantie fabricant écrite jusqu'à 15 ans. Ce qui est couvert, expliqué sans petits caractères.",
+      "Le traitement nano GoNano® est appuyé par une garantie fabricant écrite jusqu'à 15 ans. Ce qui est couvert, expliqué sans petits caractères.",
     images: [
       {
         url: "/images/water-pearling-hydrophobic-roof.jpg",
@@ -83,7 +83,7 @@ const avantages = [
   },
   {
     title: "N'annule pas votre garantie de bardeaux",
-    text: "GoNano vous appuie même auprès du fabricant si nécessaire.",
+    text: "GoNano® vous appuie même auprès du fabricant si nécessaire.",
   },
   {
     title: "Droits du consommateur protégés",
@@ -120,7 +120,7 @@ export default function GarantiePage() {
     serviceType: "Garantie de traitement nano de toiture",
     name: "Garantie du traitement nano de toiture — Toitures Vitalis",
     description:
-      "Garantie fabricant écrite et transférable pouvant aller jusqu'à 15 ans (jusqu'à 20 ans avec Fortify Elite), couvrant les défauts causés par le traitement nano GoNano.",
+      "Garantie fabricant écrite et transférable pouvant aller jusqu'à 15 ans (jusqu'à 20 ans avec Fortify Elite), couvrant les défauts causés par le traitement nano GoNano®.",
     provider: { "@id": `${site.url}/#business` },
     areaServed: site.areaServed.map((name) => ({ "@type": "City", name })),
     additionalProperty: durees.map((d) => ({
@@ -147,7 +147,7 @@ export default function GarantiePage() {
         eyebrow="La garantie"
         titleLead="Une garantie écrite, transparente et"
         titleKeyword="transférable."
-        subtitle="Le traitement nano de GoNano est appuyé par une garantie fabricant écrite pouvant aller jusqu'à 15 ans. Voici exactement ce qu'elle couvre — en toute transparence, sans petits caractères cachés."
+        subtitle="Le traitement nano de GoNano® est appuyé par une garantie fabricant écrite pouvant aller jusqu'à 15 ans. Voici exactement ce qu'elle couvre — en toute transparence, sans petits caractères cachés."
         bgImage="/images/shingle-texture-macro.png"
         bgAlt="Texture rapprochée d'une toiture en bardeaux d'asphalte"
         breadcrumb={[{ label: "Accueil", href: "/" }, { label: "Garantie" }]}
@@ -300,7 +300,7 @@ export default function GarantiePage() {
                 <div className="flex-1">
                   <p className="text-[1rem] leading-[1.6] text-navy">
                     Nous croyons en la transparence totale. Consultez le document de
-                    garantie officiel de GoNano avant tout engagement — aucune surprise,
+                    garantie officiel de GoNano® avant tout engagement — aucune surprise,
                     aucun petit caractère caché.
                   </p>
                   <a

@@ -65,21 +65,21 @@ const nanosilice: { label: string; text: string }[] = [
 const produits = [
   {
     img: "/images/Nuroof-fortify.png",
-    alt: "Produit GoNano NuRoof Fortify pour traitement de toitures récentes",
+    alt: "Produit GoNano® NuRoof Fortify pour traitement de toitures récentes",
     title: "NuRoof Fortify",
     subtitle: "Toitures récentes (moins de 5 ans)",
     desc: "Un bouclier préventif pour protéger un toit encore neuf. Nanotechnologie haute concentration + bio-huile. Prolongation jusqu'à 15 ans.",
   },
   {
     img: "/images/Nuroof-revive.png",
-    alt: "Produit GoNano NuRoof Revive pour toitures de 5 à 20 ans",
+    alt: "Produit GoNano® NuRoof Revive pour toitures de 5 à 20 ans",
     title: "NuRoof Revive",
     subtitle: "Toitures de 5 à 20 ans",
     desc: "Restaure et protège un toit qui commence à vieillir. Nanotechnologie avancée qui redonne flexibilité et résistance. Prolongation jusqu'à 10 ans.",
   },
   {
     img: "/images/Nuroof-bioboost.png",
-    alt: "Produit GoNano NuRoof Bio-Boost pour toitures de 10 ans et plus",
+    alt: "Produit GoNano® NuRoof Bio-Boost pour toitures de 10 ans et plus",
     title: "Bio-Boost",
     subtitle: "Toitures de 10 ans et plus",
     desc: "Solution économique pour les toitures vieillissantes. Nanotechnologie + bio-huiles renouvelables. Prolongation de 3 à 5 ans.",
@@ -247,7 +247,7 @@ export default function CommentCaFonctionnePage() {
                 qui comble temporairement les fissures — mais ça s&apos;use en 1 à 2 ans.
               </p>
               <p className="mt-4 text-[1.05rem] leading-[1.75] text-greytext">
-                Le traitement nano de GoNano fonctionne autrement : ses nanoparticules de
+                Le traitement nano de GoNano® fonctionne autrement : ses nanoparticules de
                 silice, des milliers de fois plus petites qu&apos;un grain de poussière,
                 pénètrent dans le bardeau et créent de nouvelles liaisons au niveau
                 moléculaire. Résultat : le bardeau retrouve de la flexibilité et gagne une

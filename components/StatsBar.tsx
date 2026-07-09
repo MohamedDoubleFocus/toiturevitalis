@@ -99,7 +99,7 @@ const stats: { Icon: LucideIcon; node: React.ReactNode; label: string }[] = [
 ];
 
 const badges: { Icon: LucideIcon; text: string }[] = [
-  { Icon: BadgeCheck, text: "Certifié GoNano" },
+  { Icon: BadgeCheck, text: "Certifié GoNano®" },
   { Icon: ShieldCheck, text: "Licencié et assuré" },
   { Icon: Sparkles, text: "Sans arrachage" },
   { Icon: Handshake, text: "Évaluation sans pression" },
