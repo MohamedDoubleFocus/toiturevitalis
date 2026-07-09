@@ -128,10 +128,10 @@ html:not(.js) .reveal {
     color: #08131a;
     background-image: linear-gradient(var(--brand), var(--brand));
     background-repeat: no-repeat;
-    background-size: 100% 0.82em;
-    background-position: 0 center;
+    background-size: 100% 0.96em;
+    background-position: 0 54%;
     padding: 0 0.2em;
-    border-radius: 3px;
+    border-radius: 4px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
