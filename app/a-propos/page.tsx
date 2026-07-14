@@ -125,7 +125,7 @@ export default function AProposPage() {
             <Reveal>
               <div className="photo-treat relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
                 <Image
-                  src="/images/our-branded-van.png"
+                  src="/images/our-branded-van.jpg"
                   alt="Véhicule brandé Toitures Vitalis devant une maison résidentielle au Grand Montréal"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
