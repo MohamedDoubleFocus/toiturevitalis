@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       "Durée, coût, garantie, admissibilité — toutes vos questions sur le traitement nano de toiture, avec des réponses honnêtes.",
     images: [
       {
-        url: "/images/roofer-spraying-roof.jpg",
+        url: "/images/roofer-spraying-hero.jpg",
         width: 1200,
         height: 630,
         alt: "Technicien Toitures Vitalis appliquant le traitement nano sur une toiture",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Questions fréquentes sur le traitement de toiture | Vitalis",
     description:
       "Durée, coût, garantie, admissibilité — réponses honnêtes sur le traitement nano de toiture.",
-    images: ["/images/roofer-spraying-roof.jpg"],
+    images: ["/images/roofer-spraying-hero.jpg"],
   },
 };
 
@@ -224,7 +224,7 @@ export default function FaqPage() {
 
                   <div className="photo-treat relative mt-7 aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
                     <Image
-                      src="/images/roofer-spraying-roof.jpg"
+                      src="/images/roofer-spraying-hero.jpg"
                       alt="Technicien Toitures Vitalis appliquant le traitement nano de toiture"
                       fill
                       sizes="(max-width: 1024px) 100vw, 40vw"
