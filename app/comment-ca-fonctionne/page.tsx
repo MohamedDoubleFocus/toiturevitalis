@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "La nanotechnologie qui pénètre vos bardeaux pour les renforcer de l'intérieur. Explication simple et honnête, étape par étape.",
     images: [
       {
-        url: "/images/roofer-spraying-roof.jpg",
+        url: "/images/roofer-spraying-hero.jpg",
         width: 1200,
         height: 630,
         alt: "Technicien Toitures Vitalis appliquant le traitement nano sur une toiture",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Comment fonctionne le traitement nano de toiture | Toitures Vitalis",
     description:
       "La nanotechnologie qui pénètre vos bardeaux pour les renforcer de l'intérieur. Explication simple et honnête.",
-    images: ["/images/roofer-spraying-roof.jpg"],
+    images: ["/images/roofer-spraying-hero.jpg"],
   },
 };
 
@@ -190,7 +190,7 @@ export default function CommentCaFonctionnePage() {
         titleLead="Comment fonctionne le traitement nano de"
         titleKeyword="toiture."
         subtitle="Le traitement nano n'est pas une peinture ni un simple scellant de surface. C'est une technologie qui pénètre au cœur de vos bardeaux pour les renforcer de l'intérieur — voici comment."
-        bgImage="/images/roofer-spraying-roof.jpg"
+        bgImage="/images/roofer-spraying-hero.jpg"
         bgAlt="Technicien Toitures Vitalis appliquant le traitement nano sur une toiture"
         breadcrumb={[
           { label: "Accueil", href: "/" },
